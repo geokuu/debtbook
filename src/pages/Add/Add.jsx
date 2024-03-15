@@ -4,7 +4,6 @@ import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import CloseIcon from "../../assets/icons/close.svg?react";
-import { Landing } from "../Landing.jsx";
 
 export const Add = () => {
   const dispatch = useDispatch();
@@ -38,6 +37,7 @@ export const Add = () => {
             onChange={handleChange}
             value={formData}
             placeholder="Person"
+            maxLength="12"
           />
         </div>
       </div>

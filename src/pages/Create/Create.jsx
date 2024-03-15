@@ -63,6 +63,7 @@ export const Create = () => {
           value={formData.names[i]}
           onChange={(e) => handleChange(e, i)}
           type="text"
+          maxLength="12"
           placeholder={"Person " + (i + 1)}
         />,
       );
@@ -78,11 +79,12 @@ export const Create = () => {
           <div className="input-container">
             <h1 className="heading--S">Title</h1>
             <input
-              className="text-field--M"
+              className="text-field--S"
               name="title"
               onChange={(e) => handleChange(e, undefined)}
               value={formData.title}
               type="text"
+              maxLength="12"
               placeholder="Tap to add"
             />
           </div>
